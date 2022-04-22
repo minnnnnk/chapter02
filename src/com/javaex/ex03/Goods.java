@@ -11,29 +11,37 @@ public class Goods {
 	// 생성자
 	
 	// 메소드 - gs
-	public void /*없다 라는거*/ setName(String n) {
-		name = n;
-	}
-	public void setPrice(int p) {
-		price = p;
-	}
 	public String getName() {
-		
 		return name;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public int getPrice() {
-		
 		return price;
 	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
 	
 	
 	
 	// 메소드 - 일반
 	public void showInfo() {
-		System.out.println("상품이름 " +name);
-		System.out.println("가격 " +price );
+		System.out.println("상품이름 " + name);
+		System.out.println("가격 " + price );
 		System.out.println("");
 	}
+
+
+
+	
+
+
 	
 	
 }
