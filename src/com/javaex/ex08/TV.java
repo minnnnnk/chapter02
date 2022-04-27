@@ -3,7 +3,7 @@ package com.javaex.ex08;
 public class TV {
 	//필드
 	private int channel;
-	private int voluem;
+	private int volume;
 	private boolean power;
 	
 	
@@ -14,10 +14,10 @@ public class TV {
 		
 	}
 	
-	public TV(int channel, int voluem, boolean power) {
+	public TV(int channel, int volume, boolean power) {
 		this.channel = channel;
 		this.power = power;
-		this.voluem = voluem;
+		this.volume = volume;
 	}
 	
 	
@@ -26,7 +26,7 @@ public class TV {
 		return channel;
 	}
 	public int getVoluem() {
-		return voluem;
+		return volume;
 	}
 	public boolean isPower() {
 		return power;
@@ -63,21 +63,21 @@ public class TV {
 	
 	public void volume(int volume) {
 		if (volume>100) {
-			this.voluem = 100;
+			this.volume = 100;
 		} else if (volume<0) {
-			this.voluem = 0;
+			this.volume = 0;
 		}
 	}
 	
 	public void volume(boolean volume) {
 		if (volume == true) {
-			this.voluem++;
+			this.volume++;
 		} else {
-			this.voluem--;
+			this.volume--;
 		}
 	}
 	public void status() {
-		System.out.println(voluem);
+		System.out.println(volume);
 		System.out.println(channel);
 	}
 }
