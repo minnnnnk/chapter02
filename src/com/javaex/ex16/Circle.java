@@ -36,6 +36,9 @@ public class Circle extends Shape{
 		                        ", 반지름" + this.radius+ 
 		                        "] 원을 그렸습니다. " );
 	}
-	
+	public double area() {
+		double area = 3.14*radius*radius;
+		return area;
+	}
 	
 }

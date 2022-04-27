@@ -28,6 +28,13 @@ public class ShapeApp {
 		for (int i =0; i<sArray.length; i++) {
 			sArray[i].draw();
 		}
+		System.out.println("=======================");
+		
+		for (int i =0; i<sArray.length; i++) {
+			System.out.println(sArray[i].area());
+		}
+		
+		System.out.println(((Rectangle) sArray[0]).getWidth());
 		
 	}
 

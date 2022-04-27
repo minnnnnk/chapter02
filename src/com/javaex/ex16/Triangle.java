@@ -38,4 +38,9 @@ public class Triangle extends Shape {
 		                        "] 삼각형을 그렸습니다. " );
 	}
 	
+	public double area() {
+		double area = width*height/2;
+		return area;
+	}
+	
 }

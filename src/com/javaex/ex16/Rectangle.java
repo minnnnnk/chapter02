@@ -68,4 +68,8 @@ public class Rectangle extends Shape {
 		                        "] 사각형을 그렸습니다. " );
 	}
 	
+	public double area() {
+		double area = width * height;
+		return area;
+	}
 }
